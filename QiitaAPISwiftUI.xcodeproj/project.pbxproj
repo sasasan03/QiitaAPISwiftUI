@@ -17,7 +17,6 @@
 		6944AB2A29BC074600290388 /* QiitaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944AB2929BC074600290388 /* QiitaData.swift */; };
 		6944AB2C29BC37DF00290388 /* QiitaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944AB2B29BC37DF00290388 /* QiitaViewModel.swift */; };
 		6944AB3E29BC9CAF00290388 /* QiitaRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944AB3D29BC9CAF00290388 /* QiitaRowView.swift */; };
-		6944AB4029BDAE2200290388 /* LinkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6944AB3F29BDAE2200290388 /* LinkTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		6944AB2929BC074600290388 /* QiitaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaData.swift; sourceTree = "<group>"; };
 		6944AB2B29BC37DF00290388 /* QiitaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaViewModel.swift; sourceTree = "<group>"; };
 		6944AB3D29BC9CAF00290388 /* QiitaRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRowView.swift; sourceTree = "<group>"; };
-		6944AB3F29BDAE2200290388 /* LinkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				6944AA8529B9B84A00290388 /* QiitaAPISwiftUIApp.swift */,
-				6944AA8729B9B84A00290388 /* ContentView.swift */,
-				6944AB3F29BDAE2200290388 /* LinkTest.swift */,
-				6944AB3D29BC9CAF00290388 /* QiitaRowView.swift */,
-				6944AB2B29BC37DF00290388 /* QiitaViewModel.swift */,
-				6944AB2929BC074600290388 /* QiitaData.swift */,
+				6944AC2B29BE20CA00290388 /* View */,
+				6944AC2C29BE20DB00290388 /* Model */,
+				6944AC2D29BE20EF00290388 /* ViewModel */,
 				6944AA8929B9B84B00290388 /* Assets.xcassets */,
 				6944AA8B29B9B84B00290388 /* Preview Content */,
 			);
@@ -137,6 +133,31 @@
 				6944AAA229B9B84B00290388 /* QiitaAPISwiftUIUITestsLaunchTests.swift */,
 			);
 			path = QiitaAPISwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		6944AC2B29BE20CA00290388 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6944AA8729B9B84A00290388 /* ContentView.swift */,
+				6944AB3D29BC9CAF00290388 /* QiitaRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6944AC2C29BE20DB00290388 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6944AB2929BC074600290388 /* QiitaData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6944AC2D29BE20EF00290388 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6944AB2B29BC37DF00290388 /* QiitaViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +293,6 @@
 				6944AA8829B9B84A00290388 /* ContentView.swift in Sources */,
 				6944AB2A29BC074600290388 /* QiitaData.swift in Sources */,
 				6944AA8629B9B84A00290388 /* QiitaAPISwiftUIApp.swift in Sources */,
-				6944AB4029BDAE2200290388 /* LinkTest.swift in Sources */,
 				6944AB2C29BC37DF00290388 /* QiitaViewModel.swift in Sources */,
 				6944AB3E29BC9CAF00290388 /* QiitaRowView.swift in Sources */,
 			);
