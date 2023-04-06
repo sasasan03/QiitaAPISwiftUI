@@ -11,8 +11,10 @@ struct ContentView: View {
     
 //    @ObservedObject var qiita = QiitaViewModel()
 
-    @StateObject var qiita = QiitaViewModel()
+//    @StateObject var qiita = QiitaViewModel()
     
+    @EnvironmentObject  var qiita: QiitaViewModel
+     
     var body: some View {
         NavigationStack {
             List(qiita.articles) { article in
@@ -22,7 +24,7 @@ struct ContentView: View {
         }
         .task {//画面が非表示となった時に task で実行されている処理が自動的にキャンセルされる。
             //そのため、画面が再表示されたときに処理結果が重複することを避けることができる。←onapperとの違い
-                await qiita.fetchQiitaArticles()
+            await qiita.fetchQiitaArticles()
             }
     }
 }
@@ -32,5 +34,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(QiitaViewModel())
     }
 }

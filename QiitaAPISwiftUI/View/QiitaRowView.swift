@@ -28,13 +28,19 @@ struct QiitaRowView: View {
 }
 
 //struct QiitaRowView_Previews: PreviewProvider {
+//    
+//    @EnvironmentObject var qiita:QiitaViewModel
+//    
 //    static var previews: some View {
-//        QiitaRowView(article: QiitaArticle(
-//            title:"qiitaの記事",
-//            createdAt: "2023/3/12",
-//            url: (URL(string: "https://qiita.com/goto2023/items/08c5c724a39a78a25d70"),
-//            user: User.init(name: T##String, profileImageURL: T##URL)
+//        
+//        QiitaRowView(
+//            
+////            article: QiitaArticle(
+////            title:"qiitaの記事",
+////            createdAt: "2023/3/12",
+////            url: (URL(string: "https://qiita.com/goto2023/items/08c5c724a39a78a25d70"),
+////            user: User.init(name: T##String, profileImageURL: T##URL)
 //
-//        ))
+//        )
 //    }
 //}

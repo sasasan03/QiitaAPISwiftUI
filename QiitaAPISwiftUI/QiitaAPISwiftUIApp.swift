@@ -12,6 +12,7 @@ struct QiitaAPISwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(QiitaViewModel())
 //            AsyncTaskTest()
 //            LinkTest()
         }

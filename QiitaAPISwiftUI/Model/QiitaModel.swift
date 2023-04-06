@@ -32,6 +32,7 @@ struct User: Decodable {
     enum CodingKeys: String, CodingKey {
         case name
         //Jsonの場合はこんな感じ
+//        case profileImageURL = "profile_image"//🟥jsonの名称と違っているとデコード使用とすると詰まる
         case profileImageURL = "profile_image_url"
     }
 }
