@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
 //    @ObservedObject var qiita = QiitaViewModel()
 
 //    @StateObject var qiita = QiitaViewModel()
+
+struct ContentView: View {
     
     @EnvironmentObject  var qiita: QiitaViewModel
      

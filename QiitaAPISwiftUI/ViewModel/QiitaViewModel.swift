@@ -15,9 +15,7 @@ class QiitaViewModel: ObservableObject {
         do {
             guard let url = URL(string: "https://qiita.com/api/v2/items?page=1") else { return }
             let (data, _) = try await URLSession.shared.data(from: url)
-            print(">>>デコード前")
             articles = try JSONDecoder().decode([QiitaArticle].self, from: data)
-            print(">>>デコード後")
         } catch {
             print("Error")
         }
